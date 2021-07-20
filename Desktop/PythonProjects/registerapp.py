@@ -9,7 +9,7 @@ window.config(background="#ACBAB6")
 main_title = Label(window, text= "Registration Form", bg="#30A282", font="Arial", fg= "white", width="500", height="2")
 main_title.pack()
 
-#function
+#functions.
 
 def send_data():
     lastaname_data = lastname.get()
@@ -17,8 +17,7 @@ def send_data():
     age_data =str(age.get())
     email_data = email.get()
 
-    #print(lastaname_data, "\t", name_data, "\t", age_data, "\t", email_data, "\t")
-
+   
     new_file= open("registration.txt", "a")
     new_file.write(lastaname_data)
     new_file.write("\t")
@@ -42,7 +41,7 @@ def send_data():
     
 
 
-#labels form
+#labels form.
 
 lastname_label = Label(text="Lastname", fg="black" )
 lastname_label.place(x=22, y= 70)
@@ -68,7 +67,7 @@ name_entry.place(x= 22, y=160)
 age_entry.place(x= 22, y=220)
 email_entry.place(x= 22, y=280)
 
-#Button
+#Button.
 sumbit_button = Button(window, text= "Sumbit", command= send_data, width="30", height="2", bg="#30A282")
 sumbit_button.place(x=22, y= 340)
 
